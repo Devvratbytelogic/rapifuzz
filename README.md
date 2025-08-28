@@ -52,3 +52,8 @@ Command	Description
 npm run dev	Runs the --> app in development mode
 npm run build	--> Builds the app for production
 npm start	--> Starts the production server
+
+
+### 5. Default Credentials for Application Testing
+- username: Devvrat
+- password: Sarkar@123

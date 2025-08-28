@@ -4,11 +4,13 @@ import { getImagesData } from '@/server-api/apihandler'
 import React from 'react'
 
 export default async function HomePage({ searchParams }: { searchParams?: any }) {
-const params = await searchParams;
-  const query = params?.search || "";
+  const params = await searchParams;
+  const query = params?.search || ""; // Get the 'search' query or default to empty string
 
+  // Fetch all images from the server/API
   const data = await getImagesData();
 
+  // Filter images based on the search query (case-insensitive match on title)
   const filteredData =
     data && data?.length > 0
       ? data?.filter(item => item?.title?.toLowerCase().includes(query.toLowerCase()))
@@ -19,7 +21,7 @@ const params = await searchParams;
       <div className='custom_container_padding rounded-2xl bg-white/10 backdrop-blur-lg border space-y-8 min-h-screen'>
         <div className="flex justify-between gap-5">
           <h1 className="large_heading text-center">Image Gallery</h1>
-          <ImageSearchFilter />
+          <ImageSearchFilter /> {/* client Component to handle search input */}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredData && filteredData?.length > 0 ? (
