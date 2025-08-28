@@ -1,0 +1,35 @@
+.form_wrapper {
+
+  .form_input_field_wrapper {
+    @apply mb-4 relative w-full;
+  }
+
+  .form_input_field_wrapper_with_label {
+    @apply mb-10 relative;
+  }
+
+  .two_column_form_field_wrapper {
+    @apply flex flex-wrap sm:flex-nowrap gap-2 w-full;
+
+    .form_input_field_wrapper_with_label {
+      @apply w-full mb-4;
+    }
+  }
+
+  [data-slot="input-wrapper"] {
+    @apply border rounded-lg h-11 text-white/80 border-white/20;
+  }
+
+  .group[data-focus="true"] .group-data-\[focus\=true\]\:border-default-foreground {
+    border-color: #fff !important;
+  }
+
+}
+
+.error_message {
+  @apply text-red-500 text-sm mt-1 text-left;
+}
+
+::placeholder {
+  @apply text-white/80;
+}

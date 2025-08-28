@@ -1,0 +1,61 @@
+.layout_container {
+    @apply w-[90%] xl:w-4/5 m-auto;
+}
+
+.extra_large_heading {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-white;
+}
+
+.large_heading {
+    @apply text-2xl md:text-3xl lg:text-4xl font-bold text-white;
+}
+
+.medium_heading {
+    @apply text-xl md:text-2xl lg:text-3xl font-semibold text-white;
+}
+
+.normal_heading {
+    @apply text-lg md:text-xl lg:text-2xl font-semibold text-white;
+}
+
+.small_text {
+    @apply text-lg md:text-lg lg:text-xl font-medium text-white;
+}
+
+.xl_small_text {
+    @apply text-base md:text-lg lg:text-lg font-medium text-white;
+}
+
+.space_for_header {
+    @apply pt-4;
+}
+.normal_space_form_top {
+    @apply pt-6;
+}
+
+.custom_container_margin {
+    @apply mx-2 lg:mx-[1%] xl:mx-[1%] py-1;
+}
+
+.custom_container_padding {
+    @apply px-3 lg:px-[2%] xl:px-[4%] py-3;
+}
+
+.custom_margin_for_all_side {
+    @apply m-2;
+}
+
+.custom_padding_for_all_side {
+    @apply p-2;
+}
+
+.custom_gap_for_all_side {
+    @apply gap-2;
+}
+
+svg{
+    @apply fill-white w-5 h-5;
+}
+.border{
+@apply border border-white/20;
+}

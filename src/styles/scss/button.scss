@@ -1,0 +1,48 @@
+.btn_global {
+  @apply font-montserrat text-sm font-medium;
+
+  &.rounded_btn {
+    @apply rounded-full;
+  }
+
+  &.rounded_md_btn {
+    @apply rounded-md;
+  }
+  &.rounded_lg_btn {
+    @apply rounded-lg;
+  }
+
+  &.rounded_none {
+    @apply rounded-none;
+  }
+
+  &.bg_primary {
+    @apply bg-gradient-to-r from-pink-500 to-purple-500 text-white;
+  }
+
+  &.outline_primary {
+    @apply text-primary border border-primary bg-transparent;
+  }
+
+  &.bg_secondary {
+    @apply bg-secondary text-white;
+  }
+
+  &.outline_secondary {
+    @apply text-white border border-secondary bg-transparent;
+  }
+
+  &.is_icon_btn {
+    svg {
+      @apply text-xl;
+    }
+  }
+
+  &.custom_padding_button {
+    @apply py-1.5 px-5;
+  }
+
+  &.full_width {
+    @apply w-full;
+  }
+}

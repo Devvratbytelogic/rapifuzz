@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@plugin '../../hero.ts';
+@import "../styles/scss/common.scss";
+@import "../styles/scss/button.scss";
+@import "../styles/scss/form.scss";
+
+@source '../../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+
+@theme {
+  --color-primary: #3882FF;
+  --color-secondary: #f7941d;
+
+
+
+  /* fonts */
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+p,
+span {
+  @apply text-white/80;
+}
+
+body {
+  @apply overflow-x-hidden font-montserrat bg-gradient-to-br from-purple-600 via-indigo-600 to-blue-500;
+}
+
+.main_layout {
+  @apply min-h-screen flex flex-col justify-between ;
+}
+a{
+  @apply text-pink-400;
+}
